@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>WebStudio</title>
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,8 +35,19 @@
             <use href="./images/symbol-defs.svg#icon-smartphone"></use>
         </svg>
         <a class="header__contact contact-color" href="tel:+1-212-772-4150">+1 212-772-4150</a> 
-        </div>
+    </div>
+    <button
+    class=".js-open-menu"
+    aria-expanded="false"
+    aria-controls="mobile-menu">
+    <svg>
+        <use href="./images/Mobile menu/menu_40px.svg"></use>
+    </svg>
+    </button>
     </header>
+
+    <div class=".js-open-menu"></div>
+
     <!--Main Section-->
     <main class="main">
         <!--Hero Section-->
@@ -61,6 +73,7 @@
                     </svg>
                     <h3 class="about__title">ATTENTION TO DETAILS</h3>
                     <p class="about__subtitle">We go into all the details and processes of your business to develop a customized solution.</p>
+                    
                 </li>
                 <li>
                     <svg class="about__icon">
@@ -411,6 +424,7 @@
             </form>
         </div>
     </div>
-    <script src="./modal.js"></script>
+    <script src="./JS/modal.js"></script>
+    <script src="./JS/mobile-menu.js"></script>
 </body>
 </html>
