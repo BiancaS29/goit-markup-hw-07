@@ -16,8 +16,8 @@
 <body>
     <!--Header Section-->
     <header class="header">
-        <div class="container">
-        <a class="header__logo" href="./index.html">
+    <div class="container">
+        <a class="header__logo header__logo-mobile" href="./index.html">
             <p><span>Web</span>Studio</p>
         </a>
         <nav class="header__navigation">
@@ -27,6 +27,7 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <div class="header_info">
         <svg class="icon__contact">
             <use href="./images/symbol-defs.svg#icon-envelope"></use>
         </svg>
@@ -35,24 +36,39 @@
             <use href="./images/symbol-defs.svg#icon-smartphone"></use>
         </svg>
         <a class="header__contact contact-color" href="tel:+1-212-772-4150">+1 212-772-4150</a> 
+        </div>
     </div>
-    <button
-    class=".js-open-menu"
-    aria-expanded="false"
-    aria-controls="mobile-menu">
-    <svg>
-        <use href="./images/Mobile menu/menu_40px.svg"></use>
-    </svg>
+    <button class="js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg>
+            <use href="./images/Forum icon/symbol-defs.svg#burger-menu"></use>
+        </svg>
     </button>
     </header>
-
-    <div class=".js-open-menu"></div>
-
+    <div class="js-menu-container">
+        <button class="js-close-menu close-button">x</button>
+        <nav class="header__navigation">
+            <ul>
+                <li><a href="./index.html" target="_blank">Studio</a></li>
+                <li><a href="./portfolio.html" target="_blank">Portofolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header_contact_info">
+        <a class="header__contact contact-color" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="header__contact contact-color" href="tel:+1-212-772-4150">+1 212-772-4150</a>
+        </div>
+        <div class="social-media">
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">Facebook</a>
+        <a href="#">Linkedin</a>
+        </div>
+    </div>
     <!--Main Section-->
     <main class="main">
         <!--Hero Section-->
         <section class="hero-section">
-            <div class="container">
+            <div class="hero-section__container">
             <h1 class="hero__title">
                 EFFECTIVE SOLUTIONS FOR <br> YOUR BUSINESS
             </h1>
@@ -102,7 +118,7 @@
             </div>
         </section>
         <!--What we do Section-->
-        <section class="activity">
+        <section class=" what-we-do-section activity">
             <div class="container">
             <h2 class="activity__title">What we do</h2>
             <div class="activity__flex">
@@ -329,7 +345,7 @@
     </main>
     <!--Footer Section-->
     <footer class="footer">
-        <div class="container">
+        <div class="footer__container">
         <div>
         <a class="footer__logo logo-color" href="./index.html">
             <p><span>Web</span>Studio</p>
@@ -420,7 +436,6 @@
                     I agree with the letter and accept the <a href="#" class="condition">Terms and Conditions</a>
                 </label>
                 <button type="submit" class="modal-form__btn">Send</button>
-
             </form>
         </div>
     </div>
